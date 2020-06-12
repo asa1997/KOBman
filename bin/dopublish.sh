@@ -2,7 +2,7 @@
 
 kob_rel_version=$1
 branch="Release"
-dist_branch="dist"
+dist_branch="dist_copy"
 
 #sanity
 if [[ -z "$kob_rel_version" ]]; then
@@ -29,8 +29,7 @@ cp ~/KOBman/build/tmp/kobman-latest.zip ~/KOBman/build/tmp/kobman-$kob_rel_versi
 mv ~/KOBman/scripts/get.kobman.io ~/KOBman/build/tmp/
 
 # moving into dist branch
-git checkout $dist_branch
-
+git checkout dist
 # collecting files from Release branch tmp/ folder to dist branch
 git checkout $branch -- ~/KOBman/build/tmp/* &> /dev/null
 
