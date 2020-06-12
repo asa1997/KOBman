@@ -41,7 +41,7 @@ mv ~/KOBman/build/tmp/* ~/KOBman/dist/
 # saving changes and pushing
 git add ~/KOBman/dist/*
 git commit -m "Released the version $kob_rel_version"
-git push origin -f $dist_branch
+git push origin -f dist
 
 #checkout back to master
 git checkout master_copy
