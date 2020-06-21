@@ -1,4 +1,5 @@
 #                                                       Demo Script
+ _________________________________________________________
 
 **Step 1:** Navigate to Readme.md and follow instructions to install KOB
 
@@ -6,12 +7,14 @@
 
  _________________________________________________________
 
-**Step 2:** Show the version of Kob installed and  Step 2:  kob help
+**Step 2:** Tryout a) version of kob installed b) kob help
 
+![image](https://user-images.githubusercontent.com/33585301/85214138-f7a40d00-b384-11ea-947d-39f757a8ecaa.png)
  _________________________________________________________
 
  **Step 3:** kob list
 
+![image](https://user-images.githubusercontent.com/33585301/85214146-199d8f80-b385-11ea-8e2d-72c7a2293926.png)
  _________________________________________________________
 
 **Step 4:**
@@ -21,6 +24,7 @@ Mention what softwares will be installed as a part of the environment you have s
  _________________________________________________________
 
 **Step 5:**
+Listing out command and its expected outputs:
 
     kob install --env KOBman --version 0.0.2(kob status)
 
