@@ -3,8 +3,11 @@
 
  **Step 1:** <u> Navigate to Readme.md and follow instructions to install KOB </u>
 
-![image](https://user-images.githubusercontent.com/33585301/85214081-37b6c000-b384-11ea-836e-ac73281e5fb6.png)
+# ![image](https://user-images.githubusercontent.com/33585301/85214081-37b6c000-b384-11ea-836e-ac73281e5fb6.png )
 
+<img src="https://user-images.githubusercontent.com/33585301/85214081-37b6c000-b384-11ea-836e-ac73281e5fb6.png" width="700" height="400">
+
+ 
  _________________________________________________________
 
 **Step 2:** Tryout a) version of kob installed b) kob help
