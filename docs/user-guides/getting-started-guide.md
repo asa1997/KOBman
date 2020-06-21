@@ -1,7 +1,7 @@
-#                                                       Demo Script
+# &#x1F4D8;                                                       Demo Script
  _________________________________________________________
 
-**Step 1:** Navigate to Readme.md and follow instructions to install KOB
+ **Step 1:** <u> Navigate to Readme.md and follow instructions to install KOB </u>
 
 ![image](https://user-images.githubusercontent.com/33585301/85214081-37b6c000-b384-11ea-836e-ac73281e5fb6.png)
 
