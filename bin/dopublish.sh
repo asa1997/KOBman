@@ -43,5 +43,5 @@ git add $HOME/KOBman/dist/*
 git commit -m "Released the version $kob_rel_version"
 git push origin -f -u $dist_branch
 
-#checkout back to master
-git checkout master
+#checkout back to kobman_env
+git checkout kobman_env
