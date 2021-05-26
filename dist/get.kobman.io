@@ -12,7 +12,10 @@ KOBMAN_VERSION="0.0.5"
 KOBMAN_ENV_REPOS="$KOBMAN_NAMESPACE/kobman-env-repo"
 # KOBMAN_DIST_BRANCH=${KOBMAN_DIST_BRANCH:-REL-${KOBMAN_VERSION}}
 
+echo "HOME:$HOME"
 
+echo "PWD:"
+pwd
 
 if [ -z "$KOBMAN_DIR" ]; then
     KOBMAN_DIR="$HOME/.kobman"
@@ -41,6 +44,7 @@ kobman_zshrc="${HOME}/.zshrc"
 kobman_init_snippet=$( cat << EOF
 #THIS MUST BE AT THE END OF THE FILE FOR KOBMAN TO WORK!!!
 export KOBMAN_DIR="$KOBMAN_DIR"
+echo "KOBMAN_DIR=$KOBMAN_DIR"
 [[ -s "${KOBMAN_DIR}/bin/kobman-init.sh" ]] && source "${KOBMAN_DIR}/bin/kobman-init.sh"
 EOF
 )
@@ -172,7 +176,7 @@ mkdir -p "$kobman_env_folder"
 mkdir -p "$kobman_etc_folder"
 mkdir -p "$kobman_var_folder"
 
-
+ls $KOBMAN_DIR
 
 echo "Prime the config file..."
 echo "config selfupdate/debug_mode = true"
@@ -202,6 +206,11 @@ echo "Download script archive..."
 # once move to kobman namespace needs to update kobman-latest.zip 
 curl -sL --location --progress-bar "${KOBMAN_SERVICE}/${KOBMAN_NAMESPACE}/KOBman/dist/dist/kobman-latest.zip" > "$kobman_zip_file"
 
+if [[ "$?" == "0" ]]; then
+	echo "curled"
+else
+	echo "not curled"
+fi
 
 ARCHIVE_OK=$(unzip -qt "$kobman_zip_file" | grep 'No errors detected in compressed data')
 if [[ -z "$ARCHIVE_OK" ]]; then
@@ -312,6 +321,8 @@ if [[ -z $(grep 'kobman-init.sh' "$kobman_zshrc") ]]; then
 fi
 
 echo -e "\n\n\nAll done!\n\n"
+
+ls $KOBMAN_DIR/bin
 
 echo "Please open a new terminal, or run the following in the existing one:"
 echo ""
